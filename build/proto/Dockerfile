@@ -15,7 +15,7 @@
 
 # NOTE: This Dockerfile is optimized for ease of changes (dev/release work)
 # rather than number of layers.
-FROM golang:1.20
+FROM golang:1.24.4
 
 RUN DEBIAN_FRONTEND=noninteractive apt update && \
     DEBIAN_FRONTEND=noninteractive apt install wget unzip python3-pip --assume-yes
